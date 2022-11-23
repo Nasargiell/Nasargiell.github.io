@@ -25,29 +25,18 @@ a {
 }
 
 .fadeInDown {
-    transform: translate3d(0, -20px, 0);
+    animation: fadeIn 2s;
+    -webkit-animation: fadeIn 2s;
 }
 
-.fadeInUp {
-    transform: translate3d(0, 20px, 0);
-}
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
 
-.fadeInRight {
-    transform: translate3d(20px, 0, 0);
-}
-
-.fadeInLeft {
-    transform: translate3d(-20px, 0, 0);
-}
-
-[data-anime] {
-    opacity: 0;
-}
-
-.anime {
-    opacity: 1;
-    transform: none;
-    transition: transform 0.8s, opacity 0.8s;
+    to {
+        opacity: 1;
+    }
 }
 
 /* Introdução */
@@ -275,6 +264,7 @@ a {
 
 
 .Formacaos {
+    max-width: 1080px;
     color: #1a1b1f;
     font-family: "Merryweather", serif;
     padding: 150px 20px;
@@ -323,7 +313,7 @@ a {
 @media (max-width: 800px) {
     .formacao {
         grid-template-columns: 2fr 2fr;
-        gap: 40px;
+        gap: 20px;
     }
 
     .formacao .subtitulo {
