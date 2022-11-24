@@ -41,7 +41,7 @@ a {
 
 /* Introdução */
 .introducao {
-    max-width: 1080px;
+    max-width: 1200px;
     color: transparent;
     padding: 40px 20px;
     margin: 0 auto;
@@ -97,7 +97,7 @@ a {
 
 }
 
-@media (max-width: 1080px) {
+@media (max-width: 800px) {
     .introducao {
         grid-template-columns: 1fr;
     }
