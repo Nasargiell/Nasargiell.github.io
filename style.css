@@ -97,7 +97,7 @@ a {
 
 }
 
-@media (max-width: 480px) {
+@media (max-width: 200px) {
     .introducao {
         grid-template-columns: 1fr;
     }
